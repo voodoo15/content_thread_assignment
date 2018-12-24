@@ -6,8 +6,10 @@
   <title>Toothmeister</title>
   <meta name="description" content="" />
   <meta name="keywords" content="toothmeister, dentist, dental, directory" />
-  <meta name="author" content="Content Thread 2018.  All rights reserved." />
+  <meta name="author" content="Content Thread 2018.  All rights reserved.
+  " />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 </head>
@@ -15,9 +17,11 @@
 <body>
   <header>
     <nav>
-      <section class="nav-hero"><a id="hero-logo" class="logo" href="www.toothmeister.com"><span>tooth</span>meister</a></section>
       <div class="nav-left">
-        <ul class="nav-quick-links">
+        <section class="nav-hero"><a id="hero-logo" class="logo" href="#"><span class="tooth">tooth</span><span class="meister">meister</span></a></section>
+      </div>
+      <div class="container">
+        <ul class="nav-quick-links row">
           <li><a href="#">My Feed</a></li>
           <li><a href="#">Upload Photo</a></li>
           <li><a href="#">Dentist Directory</a></li>
@@ -26,208 +30,333 @@
       <div class="nav-right">
         <div class="nav-search"><i class="fas fa-search"></i></div>
         <div class="nav-notifications"><i class="far fa-bell"></i></div>
-        <div class="nav-profile-name">Dr. Lucy Vasquez</div>
+        <img class="nav-profile-img oval" src="img/screen-shot-2018-03-19-at-2-34-08-pm.png" alt="article profile image" />
+        <div class="nav-profile-name">
+          <p><span id="profile-name">Dr. Lucy Vasquez</span> <i class="fas fa-caret-up"></i></p>
+        </div>
         <ul class="nav-profile-menu">
           <li>Profile</li>
           <li>Settings</li>
           <li>Login/Logout</li>
         </ul>
       </div>
+      <a id="nav-toggle" href="#" class=""><span></span></a>
     </nav>
+    <ul class="nav-mobile-quick-links">
+      <li><a href="#">My Feed</a></li>
+      <li><a href="#">Upload Photo</a></li>
+      <li><a href="#">Dentist Directory</a></li>
+    </ul>
   </header>
-  <section class="section-My-Feed">
+  <section class="section-my-feed container">
     <h1>My Feed</h1>
-    <a class="section-filter" href="#">Filters</a>
-    <article class="article-My-Feed-Item">
-      <div class="item-Header-Type">Blog - Technology</div>
-      <div class="item-Hero-Image"><img src="img/dose-media-344938.png" alt="camera image" /></div>
-      <div class="item-Title">How to take the best pictures at your practice</div>
-      <div class="item-Info">
-        <div class="item-Date">March 14, 2018</div>
-        <div>
-          <a class="item-like" href="#"><i class="fas fa-thumbs-up"></i><span class="item-like-counter"></span></a>
-          <a class="item-comment" href="#"><i class="fas fa-comment-alt"></i></a>
-          <a class="item-share" href="#"><i class="fas fa-share"></i></a>
-        </div>
-        <div class="item-content">
-          <p>
-            There isn't always time (or money) to get a professional photographer to take photos for you so we've put together a list of tips &amp; tricks.
-          </p>
-        </div>
-        <div class="item-post-footer">
-          <img class="item-post-image" src="img/screen-shot-2018-03-19-at-2-34-08-pm.png" alt="article profile image" />
-          <div class="item-post-vontent">
-            <p class="item-post-name">Dr. Bob Abborford, DMD</p>
-            <p class="item-post">Dr. Yankem</p>
-            <i class="fas fa-map-marker-alt"></i>
-            <p class="item-post-location">Baltimore, MD</p>
+    <a class="section-filter" href="#">Filters <i class="fas fa-caret-up"></i></a>
+    <div id="article-grid" class="container row">
+      <article class="article-my-feed-item d-col-4 m-col-6 s-col-12">
+        <div class="item-header-type technology">Blog &middot; <span>Technology</span></div>
+        <div class="item-hero-image"><img src="img/dose-media-344938.png" alt="camera image" /></div>
+        <div class="item-info">
+          <div class="item-title">
+            <h3>How to take the best pictures at your practice</h3>
+          </div>
+          <div class="item-meta">
+            <div class="item-date">March 14, 2018</div>
+            <div class="item-social">
+              <a class="item-like" href="#"><i class="fas fa-thumbs-up"></i><span class="item-like-counter">275</span></a>
+              <a class="item-comment" href="#"><i class="fas fa-comment-alt"></i><span class="item-comment-counter">12</span></a>
+              <a class="item-share" href="#"><i class="fas fa-share"></i><span class="item-share-counter">12</span></a>
+            </div>
+          </div>
+          <div class="item-content">
+            <p>
+              There isn't always time (or money) to get a professional photographer to take photos for you so we've put together a list of tips &amp; tricks.
+            </p>
           </div>
         </div>
-      </div>
-    </article>
-    <article class="article-advertisement">
-      <img src="img/bitmap_2.png" alt="advertisement" />
-    </article>
-    <article class="article-my-feed-item">
-      <div class="item-header-type">Blog - Practice Management</div>
-      <div class="item-hero-image"><img src="img/bitmap.png" alt="dental cleaning" /></div>
-      <div class="item-title">This is another article about practice managment</div>
-      <div class="item-info">
-        <div class="item-date">March 10, 2018</div>
-        <div>
-          <a class="item-like" href="#"><i class="fas fa-thumbs-up"></i></a>
-          <a class="item-comment" href="#"><i class="fas fa-comment-alt"></i></a>
-          <a class="item-share" href="#"><i class="fas fa-share"></i></a>
-        </div>
-        <div class="item-content">
-          <p>
-            There is a lot of exciting stuff going on in the stars above us that makes astronomy so much fun. The truth is the universe is constantly...
-          </p>
-        </div>
         <div class="item-post-footer">
-          <img class="item-post-image" src="img/screen-shot-2018-03-19-at-2-34-08-pm.png" alt="article profile image" />
-          <div class="item-post-content">
-            <p class="item-post-name">Dr. Bob Abborford, DMD</p>
-            <p class="item-post-id">Dr. Yankem</p>
-            <i class="fas fa-map-marker-alt"></i>
-            <p class="item-post-location">Baltimore, MD</p>
+            <img class="item-post-image" src="img/screen-shot-2018-03-19-at-2-34-08-pm.png" alt="article profile image" />
+            <div class="item-post-content">
+              <p class="item-post-name">Dr. Bob Abborford, DMD</p>
+              <p class="item-post-id">Dr. Yankem</p>
+              <i class="fas fa-map-marker-alt"></i>
+              <p class="item-post-location">Baltimore, MD</p>
+            </div>
+          </div>
+      </article>
+      <advertisement class="article-advertisement d-col-4 m-col-6 s-col-12">
+        <img src="img/bitmap_2.png" alt="advertisement" />
+      </advertisement>
+      <article class="article-my-feed-item d-col-4 m-col-6 s-col-12">
+        <div class="item-header-type practice">Blog &middot; <span>Practice Management</span></div>
+        <div class="item-hero-image"><img src="img/bitmap.png" alt="dental cleaning" /></div>
+        <div class="item-info">
+          <div class="item-title">
+            <h3>This is another article about practice managment</h3>
+          </div>
+          <div class="item-meta">
+            <div class="item-date">March 14, 2018</div>
+            <div class="item-social">
+              <a class="item-like" href="#"><i class="fas fa-thumbs-up"></i><span class="item-like-counter">275</span></a>
+              <a class="item-comment" href="#"><i class="fas fa-comment-alt"></i><span class="item-comment-counter">12</span></a>
+              <a class="item-share" href="#"><i class="fas fa-share"></i><span class="item-share-counter">12</span></a>
+            </div>
+          </div>
+          <div class="item-content">
+            <p>
+              There is a lot of exciting stuff going on in the stars above us that makes astronomy so much fun. The truth is the universe is constantly...
+            </p>
           </div>
         </div>
-      </div>
-    </article>
-    <article class="article-my-feed-item">
-      <div class="item-header-type">Practice Mgmt</div>
-      <div class="item-title">Who man ages the supplies and ordering at your practice?</div>
-      <div class="item-info">
-        <div class="item-date">17 minutes ago</div>
-        <div>
-          <a class="item-like" href="#"><i class="fas fa-thumbs-up"></i></a>
-          <a class="item-comment" href="#"><i class="fas fa-comment-alt"></i></a>
-          <a class="item-share" href="#"><i class="fas fa-share"></i></a>
-        </div>
-        <div class="item-content">
-          <p>
-            For pens and stationary and stuff like that, I typically don't need to be involved in ordering or pricing discussions, but I'm finding that my...
-          </p>
-        </div>
         <div class="item-post-footer">
-          <img class="item-post-image" src="img/screen-shot-2018-03-19-at-2-34-08-pm.png" alt="article profile image" />
-          <div class="item-post-content">
-            <p class="item-post-name">Dr. Bob Abborford, DMD</p>
-            <p class="item-post-id">Dr. Yankem</p>
-            <i class="fas fa-map-marker-alt"></i>
-            <p class="item-post-location">Baltimore, MD</p>
+            <img class="item-post-image" src="img/screen-shot-2018-03-19-at-2-34-08-pm.png" alt="article profile image" />
+            <div class="item-post-content">
+              <p class="item-post-name">Dr. Bob Abborford, DMD</p>
+              <p class="item-post-id">Dr. Yankem</p>
+              <i class="fas fa-map-marker-alt"></i>
+              <p class="item-post-location">Baltimore, MD</p>
+            </div>
+          </div>
+      </article>
+      <article class="article-my-feed-item d-col-4 m-col-6 s-col-12">
+        <div class="item-header-type"><span class="mgmt">Practice Mgmt</span></div>
+        <div class="item-info">
+          <div class="item-title">
+            <h3>Who manages the supplies and ordering at your practice?</h3>
+          </div>
+          <div class="item-meta">
+            <div class="item-date">March 14, 2018</div>
+            <div class="item-social">
+              <a class="item-like" href="#"><i class="fas fa-thumbs-up"></i><span class="item-like-counter">275</span></a>
+              <a class="item-comment" href="#"><i class="fas fa-comment-alt"></i><span class="item-comment-counter">12</span></a>
+              <a class="item-share" href="#"><i class="fas fa-share"></i><span class="item-share-counter">12</span></a>
+            </div>
+          </div>
+          <div class="item-content">
+            <p>
+              For pens and stationary and stuff like that, I typically don't need to be involved in ordering or pricing discussions, but I'm finding that my...
+            </p>
           </div>
         </div>
-      </div>
-    </article>
-    <article class="article-My-Feed-Item">
-      <div class="item-Header-Type">Practice Mgmt</div>
-      <div class="itemTitle">Who man ages the supplies and ordering at your practice?</div>
-      <div class="item-Info">
-        <div class="item-Date">17 minutes ago</div>
-        <div>
-          <a class="item-like" href="#"><i class="fas fa-thumbs-up"></i></a>
-          <a class="item-comment" href="#"><i class="fas fa-comment-alt"></i></a>
-          <a class="item-share" href="#"><i class="fas fa-share"></i></a>
-        </div>
-        <div class="item-content">
-          <p>
-            For pens and stationary and stuff like that, I typically don't need to be involved in ordering or pricing discussions, but I'm finding that my...
-          </p>
-        </div>
         <div class="item-post-footer">
-          <img class="item-post-image" src="img/screen-shot-2018-03-19-at-2-34-08-pm.png" alt="article profile image" />
-          <div class="item-post-content">
-            <p class="item-post-name">Dr. Bob Abborford, DMD</p>
-            <p class="item-post-id">Dr. Yankem</p>
-            <i class="fas fa-map-marker-alt"></i>
-            <p class="item-post-location">Baltimore, MD</p>
+            <img class="item-post-image" src="img/screen-shot-2018-03-19-at-2-34-08-pm.png" alt="article profile image" />
+            <div class="item-post-content">
+              <p class="item-post-name">Dr. Bob Abborford, DMD</p>
+              <p class="item-post-id">Dr. Yankem</p>
+              <i class="fas fa-map-marker-alt"></i>
+              <p class="item-post-location">Baltimore, MD</p>
+            </div>
+          </div>
+      </article>
+      <article class="article-my-feed-item d-col-4 m-col-6 s-col-12">
+        <div class="item-header-type"><span class="mgmt">Practice Mgmt</span></div>
+        <div class="item-info">
+          <div class="item-title">
+            <h3>Who manages the supplies and ordering at your practice?</h3>
+          </div>
+          <div class="item-meta">
+            <div class="item-date">March 14, 2018</div>
+            <div class="item-social">
+              <a class="item-like" href="#"><i class="fas fa-thumbs-up"></i><span class="item-like-counter">275</span></a>
+              <a class="item-comment" href="#"><i class="fas fa-comment-alt"></i><span class="item-comment-counter">12</span></a>
+              <a class="item-share" href="#"><i class="fas fa-share"></i><span class="item-share-counter">12</span></a>
+            </div>
+          </div>
+          <div class="item-content">
+            <p>
+              For pens and stationary and stuff like that, I typically don't need to be involved in ordering or pricing discussions, but I'm finding that my...
+            </p>
           </div>
         </div>
-      </div>
-    </article>
-    <article class="article-My-Feed-Item">
-      <div class="item-header-type">Practice Mgmt</div>
-      <div class="item-hro-image"><img src="img/bitmap_4.png" alt="cavity xray /></div>
-      <div class="item-title">Who man ages the supplies and ordering at your practice?</div>
-      <div class="item-info">
-        <div class="item-date">17 minutes ago</div>
-        <div>
-          <a class="item-like" href="#"><i class="fas fa-thumbs-up"></i></a>
-          <a class="item-comment" href="#"><i class="fas fa-comment-alt"></i></a>
-          <a class="item-share" href="#"><i class="fas fa-share"></i></a>
-        </div>
-        <div class="item-content">
-          <p>
-            For pens and stationary and stuff like that, I typically don't need to be involved in ordering or pricing discussions, but I'm finding that my...
-          </p>
-        </div>
         <div class="item-post-footer">
-          <img class="item-post-image" src="img/screen-shot-2018-03-19-at-2-34-08-pm.png" alt="article profile image" />
-          <div class="item-post-content">
-            <p class="item-post-name">Dr. Bob Abborford, DMD</p>
-            <p class="item-post-id">Dr. Yankem</p>
-            <i class="fas fa-map-marker-alt"></i>
-            <p class="item-post-location">Baltimore, MD</p>
+            <img class="item-post-image" src="img/screen-shot-2018-03-19-at-2-34-08-pm.png" alt="article profile image" />
+            <div class="item-post-content">
+              <p class="item-post-name">Dr. Bob Abborford, DMD</p>
+              <p class="item-post-id">Dr. Yankem</p>
+              <i class="fas fa-map-marker-alt"></i>
+              <p class="item-post-location">Baltimore, MD</p>
+            </div>
+          </div>
+      </article>
+      <article class="article-my-feed-item d-col-4 m-col-6 s-col-12">
+        <div class="item-header-type"><span class="mgmt">Practice Mgmt</span></div>
+        <div class="item-hero-image"><img src="img/bitmap_4.png" alt="cavity xray" /></div>
+        <div class="item-info">
+          <div class="item-title">
+            <h3>Who manages the supplies and ordering at your practice?</h3>
+          </div>
+          <div class="item-meta">
+            <div class="item-date">March 14, 2018</div>
+            <div class="item-social">
+              <a class="item-like" href="#"><i class="fas fa-thumbs-up"></i><span class="item-like-counter">275</span></a>
+              <a class="item-comment" href="#"><i class="fas fa-comment-alt"></i><span class="item-comment-counter">12</span></a>
+              <a class="item-share" href="#"><i class="fas fa-share"></i><span class="item-share-counter">12</span></a>
+            </div>
+          </div>
+          <div class="item-content">
+            <p>
+              For pens and stationary and stuff like that, I typically don't need to be involved in ordering or pricing discussions, but I'm finding that my...
+            </p>
           </div>
         </div>
-      </div>
-    </article>
+        <div class="item-post-footer">
+            <img class="item-post-image" src="img/screen-shot-2018-03-19-at-2-34-08-pm.png" alt="article profile image" />
+            <div class="item-post-content">
+              <p class="item-post-name">Dr. Bob Abborford, DMD</p>
+              <p class="item-post-id">Dr. Yankem</p>
+              <i class="fas fa-map-marker-alt"></i>
+              <p class="item-post-location">Baltimore, MD</p>
+            </div>
+          </div>
+      </article>
+      <article class="article-my-feed-item d-col-4 m-col-6 s-col-12">
+        <div class="item-header-type"><span class="mgmt">Practice Mgmt</span></div>
+        <div class="item-info">
+          <div class="item-title">
+            <h3>Who manages the supplies and ordering at your practice?</h3>
+          </div>
+          <div class="item-meta">
+            <div class="item-date">March 14, 2018</div>
+            <div class="item-social">
+              <a class="item-like" href="#"><i class="fas fa-thumbs-up"></i><span class="item-like-counter">275</span></a>
+              <a class="item-comment" href="#"><i class="fas fa-comment-alt"></i><span class="item-comment-counter">12</span></a>
+              <a class="item-share" href="#"><i class="fas fa-share"></i><span class="item-share-counter">12</span></a>
+            </div>
+          </div>
+          <div class="item-content">
+            <p>
+              For pens and stationary and stuff like that, I typically don't need to be involved in ordering or pricing discussions, but I'm finding that my...
+            </p>
+          </div>
+        </div>
+        <div class="item-post-footer">
+            <img class="item-post-image" src="img/screen-shot-2018-03-19-at-2-34-08-pm.png" alt="article profile image" />
+            <div class="item-post-content">
+              <p class="item-post-name">Dr. Bob Abborford, DMD</p>
+              <p class="item-post-id">Dr. Yankem</p>
+              <i class="fas fa-map-marker-alt"></i>
+              <p class="item-post-location">Baltimore, MD</p>
+            </div>
+          </div>
+      </article>
+      <article class="article-my-feed-item d-col-4 m-col-6 s-col-12">
+        <div class="item-header-type"><span class="mgmt">Practice Mgmt</span></div>
+        <div class="item-info">
+          <div class="item-title">
+            <h3>Who manages the supplies and ordering at your practice?</h3>
+          </div>
+          <div class="item-meta">
+            <div class="item-date">March 14, 2018</div>
+            <div class="item-social">
+              <a class="item-like" href="#"><i class="fas fa-thumbs-up"></i><span class="item-like-counter">275</span></a>
+              <a class="item-comment" href="#"><i class="fas fa-comment-alt"></i><span class="item-comment-counter">12</span></a>
+              <a class="item-share" href="#"><i class="fas fa-share"></i><span class="item-share-counter">12</span></a>
+            </div>
+          </div>
+          <div class="item-content">
+            <p>
+              For pens and stationary and stuff like that, I typically don't need to be involved in ordering or pricing discussions, but I'm finding that my...
+            </p>
+          </div>
+        </div>
+        <div class="item-post-footer">
+            <img class="item-post-image" src="img/screen-shot-2018-03-19-at-2-34-08-pm.png" alt="article profile image" />
+            <div class="item-post-content">
+              <p class="item-post-name">Dr. Bob Abborford, DMD</p>
+              <p class="item-post-id">Dr. Yankem</p>
+              <i class="fas fa-map-marker-alt"></i>
+              <p class="item-post-location">Baltimore, MD</p>
+            </div>
+          </div>
+      </article>
+      <article class="article-my-feed-item d-col-4 m-col-6 s-col-12">
+        <div class="item-header-type"><span class="mgmt">Practice Mgmt</span></div>
+        <div class="item-info">
+          <div class="item-title">
+            <h3>Who manages the supplies and ordering at your practice?</h3>
+          </div>
+          <div class="item-meta">
+            <div class="item-date">March 14, 2018</div>
+            <div class="item-social">
+              <a class="item-like" href="#"><i class="fas fa-thumbs-up"></i><span class="item-like-counter">275</span></a>
+              <a class="item-comment" href="#"><i class="fas fa-comment-alt"></i><span class="item-comment-counter">12</span></a>
+              <a class="item-share" href="#"><i class="fas fa-share"></i><span class="item-share-counter">12</span></a>
+            </div>
+          </div>
+          <div class="item-content">
+            <p>
+              For pens and stationary and stuff like that, I typically don't need to be involved in ordering or pricing discussions, but I'm finding that my...
+            </p>
+          </div>
+        </div>
+        <div class="item-post-footer">
+            <img class="item-post-image" src="img/screen-shot-2018-03-19-at-2-34-08-pm.png" alt="article profile image" />
+            <div class="item-post-content">
+              <p class="item-post-name">Dr. Bob Abborford, DMD</p>
+              <p class="item-post-id">Dr. Yankem</p>
+              <i class="fas fa-map-marker-alt"></i>
+              <p class="item-post-location">Baltimore, MD</p>
+            </div>
+          </div>
+      </article>
+    </div>
   </section>
   <footer>
-    <div class="footer-top">
-      <section class="footer-logo"><a id="foote-logo" class="logo" href="www.toothmeister.com"><span>tooth</span>meister</a></section>
-      <a class="footer-eaddress" href="mailto:support@toothmeister.com">support@toothmeister.com</a>
-      <input id="footer-eaddress-signup" type="text" />
-      <div class="footer-menu-column">
-        <h3>Heading 1</h3>
-        <ul>
-          <li><a href="#">Who we are</a></li>
-          <li><a href="#">Contact us</a></li>
-          <li><a href="#">Jobs</a></li>
-          <li><a href="#">FAQ</a></li>
-        </ul>
+    <div class="footer-top container row">
+      <div class="footer-menu-column d-col-4 m-col-12 s-col-12">
+        <section class="footer-logo"><a id="foote-logo" class="logo" href="www.toothmeister.com"><span class="tooth">tooth</span><span class="meister">meister</span></a></section>
+        <a class="footer-eaddress" href="mailto:support@toothmeister.com?subject=Support%20Tooth%20Meister">support@toothmeister.com</a>
+        <input id="footer-eaddress-signup" type="text" placeholder="Enter you email address" />
+        <button id="footer-eaddress-signup-submit" type="submit">Submit</button>
       </div>
-      <div class="footer-menu-column">
-        <h3>About</h3>
-        <ul>
-          <li><a href="#">Who we are</a></li>
-          <li><a href="#">Contact us</a></li>
-          <li><a href="#">Jobs</a></li>
-          <li><a href="#">FAQ</a></li>
-        </ul>
-      </div>
-      <div class="footer-menu-column">
-        <h3>Heading 3</h3>
-        <ul>
-          <li><a href="#">Who we are</a></li>
-          <li><a href="#">Contact us</a></li>
-          <li><a href="#">Jobs</a></li>
-          <li><a href="#">FAQ</a></li>
-        </ul>
-      </div>
+        <div class="footer-menu-column d-col-2 m-col-4 s-col-6">
+          <h3>Heading 1</h3>
+          <ul>
+            <li><a href="#">Who we are</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-menu-column d-col-2 m-col-4 s-col-6">
+          <h3>About</h3>
+          <ul>
+            <li><a href="#">Who we are</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-menu-column d-col-2 m-col-4 s-col-6">
+          <h3>Heading 3</h3>
+          <ul>
+            <li><a href="#">Who we are</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
     </div>
-    <div class="footer-bottom">
-      <div class="footer-copyright">
+    <div class="footer-bottom container row">
+      <div class="footer-copyright d-col-4 m-col-6 s-col-12">
         <p>&copy; 2018 Toothmeister</p>
       </div>
-      <div class="footer-legal">
-        <ul>
-          <li><a href="#">Terms of use</a></li>
-          <li><a href="#">Privacy policy</a></li>
-          <li><a href="#">Trust &amp; Safety</a></li>
-        </ul>
+      <div class="footer-legal d-col-4 m-col-6 s-col-12">
+        <p>
+          <a href="#">Terms of use</a> &middot; <a href="#">Privacy policy</a> &middot; <a href="#">Trust &amp; Safety</a>
+        </p>
       </div>
-      <div class="footer-social">
-        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-        <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+      <div class="footer-social row d-col-2 m-col-4">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-google-plus-g"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
       </div>
     </div>
   </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text/javascript" src="javascript/toothmeister.js"></script>
 </body>
 
 </html>
