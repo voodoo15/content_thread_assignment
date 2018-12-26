@@ -195,7 +195,7 @@ nav .container {
   text-align: center;
   width: 100%;
   z-index: 1000;
-  top: 90px;
+  top: 95px;
 }
 
 .nav-mobile-quick-links.is-open {
@@ -533,9 +533,9 @@ MEDIA QUERIES
   }
 
   section .row {
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-start;
-    height: inherit;
+    height: 2200px;
   }
 
   .section-my-feed .container {
