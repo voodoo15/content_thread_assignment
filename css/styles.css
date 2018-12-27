@@ -352,6 +352,8 @@ article .item-content {
   font-size: 14px;
   line-height: 1.57;
   text-align: left;
+  font-weight: 300 !important;
+  color: #646d82 !important;
 }
 
 section .row {
@@ -395,12 +397,18 @@ section .row {
 .item-meta {
   padding-top: 13px;
   padding-bottom: 13px;
-  color: #a6b1c2;
+  color: #a6b1c2 !important;
+  font-weight: 500;
 }
 
 .item-date,
 .item-social {
   display: inline;
+}
+
+.item-date,
+.item-social a i {
+  color: #a6b1c2 !important;
 }
 
 .item-social {
@@ -420,9 +428,14 @@ section .row {
   padding: 14px 28px;
 }
 
+.item-post-image {
+  float: left;
+  margin-bottom: 20px;
+}
+
 .item-post-content {
-  margin-right: 35px;
-  float: right;
+  margin-left: 10px;
+  float: left;
 }
 
 .item-post-content * {
@@ -434,6 +447,22 @@ section .row {
 .item-post-location {
   display: inline;
 }
+
+.item-post-id {
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.item-post-location {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.item-post-content i {
+  opacity: 0.9;
+  color: #040e28;
+}
+
 
 /********************
 FOOTER STYLING
@@ -525,7 +554,7 @@ MEDIA QUERIES
 @media only screen and (max-width : 1200px) {
   .m-col-6 {
     width: 45%;
-    margin: 0 2.5% 2.5% 2.5%;
+    margin: 0 2.5% 2.5% 0;
   }
 
   .m-col-12 {
@@ -568,7 +597,7 @@ MEDIA QUERIES
 
   .m-col-6 {
     width: 45%;
-    margin: 0 2.5% 2.5% 2.5%;
+    margin: 0 2.5% 2.5% 0;
   }
 
   .s-col-12 {
