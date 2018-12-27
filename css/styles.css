@@ -214,6 +214,7 @@ nav .container {
 .nav-quick-links a:hover {
   border-bottom: 5px solid #42d1e3;
   position: relative;
+  font-weight: bold;
 }
 
 .nav-left li,
