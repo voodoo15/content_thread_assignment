@@ -195,7 +195,7 @@ nav .container {
   text-align: center;
   width: 100%;
   z-index: 1000;
-  top: 95px;
+  top: 81px;
 }
 
 .nav-mobile-quick-links.is-open {
@@ -243,7 +243,7 @@ nav .container {
   display: none;
   background: #fff;
   text-align: center;
-  z-index: 1000;
+  z-index: 1001;
   top: 81px;
   right: 70px;
   position: absolute;
@@ -251,7 +251,10 @@ nav .container {
 
 .nav-profile-menu li {
   line-height: 4em;
-  border: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+  border-left: 1px solid lightgrey;
+  border-right: 1px solid lightgrey;
+
 }
 
 .nav-profile-menu.is-open {
