@@ -554,7 +554,7 @@ MEDIA QUERIES
 @media only screen and (max-width : 1200px) {
   .m-col-6 {
     width: 45%;
-    margin: 0 2.5% 2.5% 2.5%;
+    margin: 0 2.5% 2.5% 0;
   }
 
   .m-col-12 {
@@ -597,7 +597,7 @@ MEDIA QUERIES
 
   .m-col-6 {
     width: 45%;
-    margin: 0 2.5% 2.5% 2.5%;
+    margin: 0 2.5% 2.5% 0;
   }
 
   .s-col-12 {
