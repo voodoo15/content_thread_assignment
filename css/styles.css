@@ -557,6 +557,10 @@ MEDIA QUERIES
     margin: 0 2.5% 2.5% 0;
   }
 
+  section .m-col-6 {
+    margin: 0 2.5% 2.5% 2.5%;
+  }
+
   .m-col-12 {
     width: 97%;
     margin: 0 2.5% 2.5% 0;
@@ -582,6 +586,11 @@ MEDIA QUERIES
 
   .section-filter {
     margin-right: 2.5%;
+  }
+
+  .footer-legal {
+    margin: 0;
+    text-align: right;
   }
 
   .footer-eaddress {
@@ -648,6 +657,10 @@ MEDIA QUERIES
   .footer-eaddress-signup,
   .footer-eaddress-signup-submit {
     display: inline-block;
+  }
+
+  .footer-legal {
+    text-align: left;
   }
 }
 
