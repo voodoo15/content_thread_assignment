@@ -352,6 +352,8 @@ article .item-content {
   font-size: 14px;
   line-height: 1.57;
   text-align: left;
+  font-weight: 300 !important;
+  color: #646d82 !important;
 }
 
 section .row {
@@ -395,12 +397,18 @@ section .row {
 .item-meta {
   padding-top: 13px;
   padding-bottom: 13px;
-  color: #a6b1c2;
+  color: #a6b1c2 !important;
+  font-weight: 500;
 }
 
 .item-date,
 .item-social {
   display: inline;
+}
+
+.item-date,
+.item-social a i {
+  color: #a6b1c2 !important;
 }
 
 .item-social {
@@ -434,6 +442,22 @@ section .row {
 .item-post-location {
   display: inline;
 }
+
+.item-post-id {
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.item-post-location {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.item-post-content i {
+  opacity: 0.9;
+  color: #040e28;
+}
+
 
 /********************
 FOOTER STYLING
