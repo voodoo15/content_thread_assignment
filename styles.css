@@ -428,9 +428,14 @@ section .row {
   padding: 14px 28px;
 }
 
+.item-post-image {
+  float: left;
+  margin-bottom: 20px;
+}
+
 .item-post-content {
-  margin-right: 35px;
-  float: right;
+  margin-left: 10px;
+  float: left;
 }
 
 .item-post-content * {
