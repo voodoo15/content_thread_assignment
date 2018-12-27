@@ -241,6 +241,21 @@ nav .container {
 
 .nav-profile-menu {
   display: none;
+  background: #fff;
+  text-align: center;
+  z-index: 1000;
+  top: 81px;
+  right: 70px;
+  position: absolute;
+}
+
+.nav-profile-menu li {
+  line-height: 4em;
+  border: 1px solid lightgrey;
+}
+
+.nav-profile-menu.is-open {
+  display: block !important;
 }
 
 #nav-toggle {
@@ -464,7 +479,6 @@ section .row {
   color: #040e28;
 }
 
-
 /********************
 FOOTER STYLING
 ********************/
@@ -670,6 +684,7 @@ MEDIA QUERIES
     width: 45%;
     margin: 0 2.5% 2.5% 2.5%;
   }
+
   .nav-right {
     display: none;
   }
