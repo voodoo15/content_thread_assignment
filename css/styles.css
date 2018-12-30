@@ -196,6 +196,8 @@ nav .container {
   width: 100%;
   z-index: 1000;
   top: 81px;
+  box-shadow: 0 8px 14px 0 rgba(100, 109, 130, 0.16), 0 0 2px 0 rgba(100, 109, 130, 0.12);
+
 }
 
 .nav-mobile-quick-links.is-open {
@@ -247,6 +249,7 @@ nav .container {
   top: 81px;
   right: 70px;
   position: absolute;
+  box-shadow: 0 8px 14px 0 rgba(100, 109, 130, 0.16), 0 0 2px 0 rgba(100, 109, 130, 0.12);
 }
 
 .nav-profile-menu li {
